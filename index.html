@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+          integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+          crossorigin="anonymous"/>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display&family=Satisfy&display=swap"
+          rel="stylesheet">
+    <title>My first site</title>
+    <link rel="icon" href="media/img/counter-strike-logos-brands-and-logotypes-9.png" type="image/x-icon">
+</head>
+
+<body>
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">
+                <a><img class="logo-icon" src="media/img/23-235434_cs-go-logo-png-csgo-logo-white-png-removebg-preview.png" alt="Roblox"></a>
+            </div>
+            <nav>
+                <div class="nav">
+                    <a class="nav__link" href="#services">Startseite</a>
+                    <a class="nav__link" href="#about">Über mich</a>
+                    <a class="nav__link" href="#slideshow">Meine Hobbys</a>
+                    <a class="nav__link" href="#portfolio">Album</a>
+                    <a class="burger-icon">Menü <i class="fas fa-bars"></i></a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!--Main-->
+<main>
+
+<!-- Intro -->
+<div class="intro">
+    <div class="container">
+        <div class="intro__subheading">Eine beliebte Online-Spielplattform, die jedes Kind kennt</div>
+        <div class="intro__heading">Virtuelle Welt</div>
+        <button
+        class="btn btn-top"
+        onclick="document.getElementById('date').innerHTML = Date()"
+        >Datum anzeigen
+        </button>
+        <p class="btn-top" id="date"></p>
+    </div>
+</div>
+<!-- Services-->
+<section class="page-section" id="services">
+    <div class="container">
+        <div>
+            <h2 class="section__heading">Wichtig</h2>
+            <h3 class="section__subheading">Warum liebe ich dieses Spiel?</h3>
+        </div>
+        <div class="services__row">
+            <div class="services__item">
+                <img src="media/img/mapcollage.png" alt="maintain" class="services__icons"/>
+                <h4 class="services__item__heading">Maps</h4>
+                <p class="services__item__description">Fähigkeit, verschiedene Maps auszuwählen</p>
+            </div>
+            <div class="services__item">
+                <img src="media/img/csbet-skins-2-min-1024x685.jpg" alt="modeling" class="services__icons"/>
+                <h4 class="services__item__heading">Skins</h4>
+                <p class="services__item__description">Fähigkeit, mit verschiedenen Mustern auf Waffen zu spielen</p>
+            </div>
+            <div class="services__item">
+                <img src="media/img/15785969701787352746.jpg" alt="charge" class="services__icons"/>
+                <h4 class="services__item__heading">Turniere</h4>
+                <p class="services__item__description">Jeden Monat finden Turniere in der Cyber-Szene statt</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--About-->
+<section class="about_me" id="about">
+    <div class="container">
+        <div>
+            <h2 class="section__heading">Ein bisschen über mich</h2>
+            <h3 class="section__subheading">Ich möchte Ihnen erklären, wer ich bin und was Sie von mir lernen werden</h3>
+        </div>
+    <div class="about">
+        <div>
+            <img class="about_photo" src="media/img/officer.png" >
+        </div>
+        <div class="about_bio">
+            <div class="about__bio__text">
+                <p>Hallo, ich bin ein Agent.</p>
+                <p>Ich leite Ihre Abteilung seit 10 Jahren. Ich werde Ihnen beibringen, wie man gewinnt und niemals aufgibt. Ich hoffe, wir können Freunde werden und uns gegenseitig unterstützen.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+            <main>
+            <div class="slideshow-container">
+                <h2 style="text-align:center">BELIEBTESTE MAPS</h2>
+    <div class="mySlides fade">
+        <img src="media/img/mirage.jpg"
+        style="width:100%">
+        <div class="text">Mirage</div>
+    </div>
+    <div class="mySlides fade">
+        <img src="media/img/csgo-dust-2-rework.jpg"
+        style="width:100%">
+        <div class="text">Dust 2</div>
+    </div>
+    <div class="mySlides fade">
+    <img src="media/img/De_new_inferno.jpg"
+        style="width:100%">
+        <div class="text">Inferno</div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)"></a>
+    <a class="next" onclick="plusSlides(1)"></a>
+            </div>
+            <br>
+            <div class="dots" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            </main>
+
+            <!--Portfolio-->
+            <section class="page-section" id="Portfolio">
+            <div class="container">
+                <div>
+                    <h2 class="section__heading">Album</h2>
+                    <h3 class="section__subheading">Ich möchte euch meine Lieblingsmomente aus dem Spiel zeigen</h3>    
+                </div>
+                <div class="portfolio__row">
+                    <div class="portfolio__item">
+                        <div class="portfolio__img">
+                            <img src="media/img/dust 2.jpg" alt="photo1" class="image"/>
+                            <div class="img-plus">
+                                <div class="plus"><i class="fas fa-plus"></i></div>
+                            </div>
+                        </div>
+                        <div class="portfolio__item__description">
+                            <h2 class="portfolio__item__header">Dust 2</h2>
+                            <p class="portfolio__item__about">Long Range 326mi. Starting at $51,190</p>
+                        </div>
+                    </div>
+                    <div class="portfolio__item">
+                        <div class="portfolio__img">
+                            <img src="media/img/De_inferno.jpg" alt="photo2" class="image" />       
+                            <div class="img-plus">
+                                <div class="plus"><i class="fas fa-plus"></i></div>
+                            </div>
+                        </div>
+        
+                        <div class="portfolio__item__description">
+                            <h2 class="portfolio__item__header">Inferno</h2>
+                            <p class="portfolio__item__about">Long Range 402mi. Starting at $70,620</p>
+                        </div>
+        
+                    </div>
+                    <div class="portfolio__item">
+                        <div class="portfolio__img">
+                            <img src="media/img/cache.jpg" alt="photo3" class="image"/>
+                            <div class="img-plus">
+                                <div class="plus"><i class="fas fa-plus"></i></div>
+                            </div>
+                        </div>
+        
+                        <div class="portfolio__item__description">
+                            <h2 class="portfolio__item__header">Cache</h2>
+                            <p class="portfolio__item__about">Long Range 371mi. Starting at $81,190</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__item">
+                        <div class="portfolio__img">
+                            <img src="media/img/overpass.jpg" alt="photo4" class="image"/>
+                            <div class="img-plus">
+                                <div class="plus"><i class="fas fa-plus"></i></div>
+                            </div>
+                        </div>
+        
+                        <div class="portfolio__item__description">
+                            <h2 class="portfolio__item__header">Overpass</h2>
+                            <p class="portfolio__item__about">Long Range 620mi. Starting at $200,000</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__item">
+                        <div class="portfolio__img">
+                            <img src="media/img/de_mirage.jpg" alt="photo5" class="image"/>
+                            <div class="img-plus">
+                                <div class="plus"><i class="fas fa-plus"></i></div>
+                            </div>
+                        </div>
+        
+                        <div class="portfolio__item__description">
+                            <h2 class="portfolio__item__header">Mirage</h2>
+                            <p class="portfolio__item__about">Long Range 353mi. Starting at $39,190</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__item">
+                        <div class="portfolio__img">
+                            <img src="media/img/nuke.jpg" alt="photo16" class="image"/>
+                            <div class="img-plus">
+                                <div class="plus"><i class="fas fa-plus"></i></div>
+                            </div>
+                        </div>
+        
+                        <div class="portfolio__item__description">
+                            <h2 class="portfolio__item__header">Nuke</h2>
+                            <p class="portfolio__item__about">Long Range 500mi. Starting at $39,900</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </main>
+
+            <!--Footer-->
+             <footer id="footer">
+             <div class="footer-container">       
+            <div class="footer__row">
+            <div class="footer__row-item">Copyright © Made by Dima Z. 2022</div>
+            <div class="footer__row-item">                          
+             <a href="https://www.youtube.com/channel/UCoXV1VvK6XbHwotutJh1zfQ" class="btn-social">
+            <img class="social-icons" src="media/img/index-removebg-preview.png" alt="youtube"/>
+             </a>
+            <a href="https://www.tiktok.com/ru-RU" class="btn-social">
+             <img class="social-icons" src="media/img/tiktok.svg" alt="tiktok"/>
+             </a>
+             <a href="https://www.instagram.com/dima_zbr/" class="btn-social">
+            <img class="social-icons" src="media/img/Instagram.png" alt="instagram"/>
+            </a>
+            </div>
+            <div class="footer__row-item">
+                        <a class="policy">Privacy Policy</a>
+                         <a class="policy">Term of use</a>
+                             </div>
+                            </div>
+                         </div>
+                     </footer>
+                    </div>
+                 </div>
+             </div>
+        </div>
+     </footer>
+    <script type="text/javascript" src="index.js"></script>
+</body>
